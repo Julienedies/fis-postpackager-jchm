@@ -1,0 +1,36 @@
+{
+    "name": "fis-postpackager-jchm",
+    "version": "0.1.0",
+    "description": "A fis plugin for generator hash map.",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Julienedies/fis-postpackager-jchm.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "init": "",
+        "preInstall": ""
+    },
+    "bin": {
+        "jchm_cli": "bin/test"
+    },
+    "preferGlobal": "true",
+    "bugs": {
+        "url": "https://github.com/Julienedies/fis-postpackager-jchm/issues"
+    },
+    "homepage": "https://github.com/Julienedies/fis-postpackager-jchm#readme",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^1.4.0",
+        "lodash": "^4.6.1",
+        "q": "^1.4.1",
+        "crypto": "0.0.3",
+        "fs-extra": "^0.22.1",
+        "hidefile": "^1.1.0",
+        "prompt": "^0.2.14",
+        "readdirp": "^2.0.0",
+        "recursive-readdir": "^1.2.1"
+    },
+    "devDependencies": {}
+}

@@ -1,0 +1,7 @@
+#! /usr/bin/env node
+
+var chcpContext = require('../lib/context.js');
+var command = require('../lib/build.js');
+command.execute(chcpContext.context({}));
+
+

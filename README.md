@@ -1,7 +1,7 @@
 fis-postpackager-jchm
 =====
 
-自用fis插件，可以在部署根目录生成hybrid.manifest.json和release.json两个文件。用于cordova hybrid app项目web内容增量更新使用。
+自用fis插件，可以在部署根目录生成hybrid.manifest.json和release.json两个文件。供cordova hybrid app项目web内容增量更新使用。
 
 ##安装
 ```

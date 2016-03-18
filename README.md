@@ -1,11 +1,11 @@
-jchm
+fis-postpackager-jchm
 =====
 
 一个fis插件，可以在部署根目录生成hybrid.manifest.json和release.json两个文件。用于hybrid app项目web内容增量更新使用。
 
 ##安装
 ```
-npm install -g jchm
+npm install -g fis-postpackager-jchm
 ```
 
 ##fis-confi.js

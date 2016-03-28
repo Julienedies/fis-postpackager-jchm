@@ -11,6 +11,14 @@ npm install -g fis-postpackager-jchm
 ##fis-confi.js
 ```
 fis.config.set('modules.postpackager', 'jchm');
+fis.config.merge({settings: {
+    postpackager: {
+        jchm: {
+            release: 'release.json', //自定义release文件名，默认为release.json；
+            manifest: 'manifest',//自定义manifest文件名，默认为ybrid.manifest.json；
+            releaseContent: {version: '1.2'} //自定义release.json中的字段，譬如版本号
+        }}
+}});
 ```
 
 ##jchm_cli

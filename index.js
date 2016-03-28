@@ -11,6 +11,8 @@ var util = require("util");
 
 module.exports = function (ret, conf, settings, opt) {
 
+    console.log(opt, conf);
+
     var LIST_EXT = "hybrid.manifest.json";
 
     var root = fis.project.getProjectPath();

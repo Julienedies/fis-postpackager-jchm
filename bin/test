@@ -1,7 +1,43 @@
 #! /usr/bin/env node
 
+var program = require('commander');
+var path = require('path');
+
+program
+    .version('0.0.1')
+    .option('-r, --release [filename]', 'custom release.json filename')
+    .option('-m, --manifest [filename]', 'custom manifest.json filename')
+    .option('-c, --config [path]', 'json file path, custom fields, version etc.')
+    .parse(process.argv);
+
+if (program.help) {
+    return program.help();
+}
+
+/*var c = program.content;
+
+if (c) {
+    try {
+        c = require(path.resolve(process.cmd(), c))
+    } catch (e) {
+        return console.log(e);
+    }
+}*/
+
 var chcpContext = require('../lib/context.js');
 var command = require('../lib/build.js');
-command.execute(chcpContext.context({}));
+
+command.execute(chcpContext.context({
+    r: program.release,
+    m: program.manifest,
+    c: program.config
+}));
+
+
+
+
+
+
+
 
 

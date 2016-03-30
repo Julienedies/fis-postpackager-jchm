@@ -12,7 +12,7 @@
         "preInstall": ""
     },
     "bin": {
-        "jchm_cli": "bin/test"
+        "jchm_cli": "bin/cli"
     },
     "preferGlobal": "true",
     "bugs": {
@@ -22,7 +22,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "commander": "^2.9.0"
+        "commander": "^2.9.0",
         "async": "^1.4.0",
         "lodash": "^4.6.1",
         "q": "^1.4.1",
